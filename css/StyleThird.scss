@@ -1,0 +1,113 @@
+/* Variable */
+$main-color : firebrick;
+$primary-color : honeydew;
+$text-color : Darkslategray;
+
+/* ----------------------- */
+
+
+/* Standard Class */
+.main-size {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.center {
+		  @extend .main-size;
+		  width: 30%;
+		  text-align: center;
+		  color: $main-color;
+	}
+.border-style {
+		  border-style: inset;
+}
+
+/* ------------------------ */
+
+
+
+p{
+		font-family: Arial, Helvetica, sans-serif;
+		/*color: teal;*/
+		font-size: 21px;
+	    margin: 30px;
+	    color: $text-color;
+   	 p::selection{
+			 	color: black;
+			 	background-color: gray;
+			}
+    
+}
+
+h2 {
+	color: forestgreen;
+}
+
+body {
+
+			background-color: FloralWhite;
+		.page-container {
+	  		 position: relative;
+	 		 min-height: 60vh;
+	 		 .header {
+  			  		display: block;
+				}
+
+			.colorText{
+				color: $text-color;
+				font-weight: bold;
+				}
+			table {
+				margin-left: auto;
+			 	margin-right: auto;
+			 	min-height: 40vh;
+				background-color: $primary-color;
+				button {
+				 	width: 100%;
+					&:hover{
+					color: green;
+					}
+				}
+			}
+			input{
+				background-color: lavender;
+				}
+			}
+			#hr-center {
+				  margin-top: 0em;
+				  margin-bottom: 2.5em;
+				  border-width: 1px;
+				  @extend .border-style;
+				  @extend .main-size;
+				}
+			#hr-top {
+				  margin-top: 0.5em;
+				  margin-bottom: 3.5em;
+				  border-width: 1px;
+				  @extend .border-style;
+				  @extend .main-size;
+				}
+			#hr-bottom {
+				  margin-top: 5em;
+				  margin-bottom: 1.5em;
+				  border-width: 1px;
+				  @extend .border-style;
+				  @extend .main-size;
+				}
+			footer {
+				 position: relative;
+		 		 bottom: 0;
+		 		 width: 100%;	
+				}
+			a:hover{
+				 color: red;
+				}
+			.bottom-div {
+				background-color: $primary-color;
+				margin: 20px;
+				span {
+					color: $main-color;
+					}
+				}
+}
